@@ -1,0 +1,11 @@
+
+La técnica de preprocesamiento de replaceMissingValues ayuda a reemplazar los valores faltantes 
+en un conjunto de datos 
+
+En el conjunto para el set de datos elejido, hay algunos valores faltantes en las columnas 
+de área, BHK y Per_Sqft. Si dejamos estos valores faltantes sin procesar, los modelos de aprendizaje 
+automático podrían no poder aprender con precisión la relación entre estas variables y el precio de la propiedad.
+
+Al usar la técnica de replaceMissingValues, se pudo reemplazar los valores faltantes en estas columnas 
+con el valor medio, la mediana o la moda. Esto ayudará a mejorar la precisión de los modelos de aprendizaje 
+automático y, por lo tanto, a mejorar la precisión de las predicciones de precios.

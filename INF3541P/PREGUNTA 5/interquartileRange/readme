@@ -1,0 +1,5 @@
+
+La técnica de preprocesamiento de interquartileRange ayuda a identificar los outliers y extreme 
+values en un conjunto de datos. Los outliers son valores que se encuentran muy alejados del resto de los datos.
+Los extreme values son outliers que se encuentran muy alejados del rango intercuartílico, que es el rango
+que contiene el 50% de los datos.

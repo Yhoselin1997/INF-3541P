@@ -1,0 +1,6 @@
+En el código, se etiqueta la columna 'Status' de un conjunto de datos:
+
+- 0 se asigna a "Almost_ready" (Casi listo).
+- 1 se asigna a "Ready_to_move" (Listo para mudarse).
+
+Estos valores 0 y 1 se almacenan en una nueva columna llamada 'Etiqueta_Binaria'. Esta transformación se realiza para representar el estado de disponibilidad de las propiedades en un formato binario. Un valor de 0 indica que la propiedad está casi lista, mientras que un valor de 1 indica que la propiedad está lista para ser ocupada de inmediato. Esta etiqueta binaria es útil para su uso en análisis posteriores, como modelos de aprendizaje automático que requieren etiquetas binarias.

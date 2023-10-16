@@ -1,0 +1,5 @@
+La imputación de la media y la moda se basa en la naturaleza de los 
+datos numéricos y categóricos, respectivamente, y en la necesidad de mantener la coherencia 
+y la representatividad de los datos durante el proceso de limpieza. El código se centra en 
+la preparación de datos, garantizando que los valores faltantes se manejen de manera apropiada 
+para su posterior análisis.

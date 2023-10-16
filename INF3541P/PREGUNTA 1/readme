@@ -1,0 +1,14 @@
+Resultados
+
+Área: La media del área es de 800 metros cuadrados. El 10% de los apartamentos tienen un área inferior a 464 metros cuadrados y el 90% tienen un área superior a 2450 metros cuadrados.
+Baños: La media de los baños es de 2. El 10% de los apartamentos tienen un baño y el 90% tienen 4.
+Mobiliario: La moda del mobiliario es "Semi-furnished".
+Parking: La moda del aparcamiento es "1".
+Precio: La media del precio es de 1466.45 dolares. 
+Precio por metro cuadrado: La media del precio por metro cuadrado es de 8.125 rupias. 
+
+Interpretación
+
+Los resultados del código sugieren que los apartamentos en el conjunto de datos son, en general, de tamaño mediano, 
+con dos baños y un aparcamiento. La mayoría de los apartamentos están amueblados de forma semi-amueblada y se encuentran 
+en la localidad de Rohini Sector 24. El precio medio de un apartamento en el conjunto de datos es de 1466.45 dolares.

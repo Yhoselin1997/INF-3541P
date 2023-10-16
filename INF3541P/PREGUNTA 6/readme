@@ -1,0 +1,13 @@
+
+1. Eliminación de Registros Duplicados:
+   La eliminación de registros duplicados es importante para garantizar que no haya datos redundantes en el conjunto de datos. Los registros duplicados pueden sesgar el análisis y conducir a resultados incorrectos o sesgados.
+
+2. Corrección de Errores Ortográficos:
+   Corregir errores ortográficos en la columna "Locality" es útil para estandarizar los datos. Esto garantiza que los mismos valores se representen de la misma manera, lo que facilita la búsqueda y el análisis de datos relacionados con la localidad.
+
+3. Eliminación de Valores Atípicos:
+    La eliminación de valores atípicos en la columna "Price" se realiza para limpiar el conjunto de datos de valores que se desvían significativamente de la mayoría de los datos. Los valores atípicos pueden afectar negativamente el rendimiento de algunos modelos de aprendizaje automático, y la eliminación de ellos puede ayudar a obtener un conjunto de datos más limpio y representativo.
+
+4. Estandarización de Datos:
+   La estandarización de la columna "Area" se realiza para que los datos estén en una escala común que va de 0 a 1. Esto es útil cuando se trabajan con modelos o algoritmos sensibles a la escala de las variables, ya que evita que variables con valores grandes dominen sobre las que tienen valores pequeños.
+

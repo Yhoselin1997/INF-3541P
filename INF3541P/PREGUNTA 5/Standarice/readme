@@ -1,0 +1,5 @@
+
+El estandarizado te ayuda a mejorar la precisión de los modelos de aprendizaje 
+automático de varias maneras. En primer lugar, ayuda a los modelos a aprender 
+mejor la relación entre las variables y la variable de destino. Esto se debe a
+ que los modelos no tienen que lidiar con valores en diferentes rangos, lo que puede dificultar su aprendizaje.

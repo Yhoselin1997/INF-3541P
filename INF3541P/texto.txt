@@ -1,0 +1,19 @@
+1. Seleccione un dataset de su interés (de cualquier repositorio, que contenga datos tabulares mínimo de 1500 filas y al menos 10 columnas). Realice el cálculo de la media, moda, cuartiles de datos y de percentiles por columna; explique qué significa en cada caso graficando los resultados (sin numpy y pandas).
+
+2. Realice lo mismo del inciso anterior con el uso de numpy y pandas
+
+3. Del dataset elegido realice la imputación por columnas sin scikit-learn.
+
+4. Aplique a su dataset el etiquetado simple y binario.
+
+5. Del dataset elegido, migre el mismo a WEKA y utilice cuatro técnicas de preprocesamiento (realice la captura de pantallas de estos por fases). Explique la razón de aplicar estas técnicas.
+
+6. El dataset elegido en PYTHON, realice tres tecnicas de preprocesamiento. Explique la razón de aplicar estas técnicas.
+
+7. Con el uso de librerías en PYTHON, construya la dependencia de Abuelos, tíos, padres, primos e hijos de su familia.
+
+8. Del dataset de citas obtenida en la clase, realice el calculo en excel para obtener el arbol de decisió, grafique el el arbol.
+
+9. Con PYTHON sin librerías construya los índices de al menos dos ciclos para un Split de Train 80 y test de 20, apliquelo en el dataset iris.
+
+Cada pregunta debe ser almacenada en Github, la misma permitir su acceso minimamente a msilva@fcpn.edu.bo. Adjuntar el link por pregunta en un PDF o Word y enviarlo para su revisión.

@@ -1,0 +1,2 @@
+La técnica de normalice se puede implementar usando el filtro Normalize. 
+Este filtro escala todos los valores numéricos en el conjunto de datos para que estén en el rango de 0 a 1.
