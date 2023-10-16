@@ -21,38 +21,38 @@ for line in lines[1:]:
     values = line.strip().split(',')
     area_values.append(float(values[0]))
     
-    # Imputación de la columna "BHK"
+  
     try:
         bhk_values.append(int(values[1]))
     except ValueError:
-        bhk_values.append(0)  # O cualquier otro valor predeterminado que elijas
+        bhk_values.append(0)  
     
-    # Imputación de la columna "Bathroom"
+   
     try:
         bathroom_values.append(int(values[2]))
     except ValueError:
-        bathroom_values.append(0)  # O cualquier otro valor predeterminado que elijas
+        bathroom_values.append(0)  
 
     furnishing_values.append(values[3] if values[3] else "Valor_predeterminado")
     locality_values.append(values[4] if values[4] else "Valor_predeterminado")
     
-    # Imputación de la columna "Parking"
+   
     try:
         parking_values.append(int(values[5]))
     except ValueError:
-        parking_values.append(0)  # O cualquier otro valor predeterminado que elijas
+        parking_values.append(0)  
     
-    # Imputación de la columna "Price"
+ 
     try:
         price_values.append(float(values[6]))
     except ValueError:
-        price_values.append(0)  # O cualquier otro valor predeterminado que elijas
+        price_values.append(0)  
 
     status_values.append(values[7] if values[7] else "Valor_predeterminado")
     transaction_values.append(values[8] if values[8] else "Valor_predeterminado")
     type_values.append(values[9] if values[9] else "Valor_predeterminado")
     
-    # Imputación de la columna "Per_Sqft"
+
     try:
         per_sqft_values.append(float(values[10]))
     except ValueError:
