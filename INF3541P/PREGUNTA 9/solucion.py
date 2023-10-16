@@ -1,13 +1,12 @@
 
-# Cargar los datos desde un archivo CSV sin usar pandas
 data = []
 
 with open(r'C:\Users\Jhoselyne\Documents\documentos\Iris.csv', 'r', encoding='latin1') as file:
     lines = file.readlines()
-    for line in lines[1:]:  # Omitir la primera línea si es un encabezado
+    for line in lines[1:]: 
         data.append(line.strip().split(','))
 
-# Dividir el conjunto de datos en características (X) y etiquetas (y)
+
 X = [row[:-1] for row in data]
 y = [row[-1] for row in data]
 
@@ -26,7 +25,7 @@ X_test = X[train_samples:]
 y_train = y[:train_samples]
 y_test = y[train_samples:]
 
-# Verificar las formas de los conjuntos de entrenamiento y prueba
+
 print("Forma de X_train:", len(X_train))
 print("Forma de X_test:", len(X_test))
 print("Forma de y_train:", len(y_train))
