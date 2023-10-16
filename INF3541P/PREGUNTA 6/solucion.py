@@ -2,10 +2,10 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
-# Importar el conjunto de datos
+
 df = pd.read_csv(r'C:\Users\Jhoselyne\Documents\documentos\IndianHouses.csv', encoding='latin1')
 
-# Limpieza de datos
+
 # Eliminar registros duplicados
 df = df.drop_duplicates()
 
