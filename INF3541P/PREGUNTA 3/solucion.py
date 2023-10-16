@@ -6,9 +6,9 @@ conjunto_de_datos = {}
 
 with open(archivo_csv, 'r', encoding='latin1') as archivo:
     lector_csv = csv.reader(archivo)
-    encabezados = next(lector_csv)  # Leer la primera fila como encabezados
+    encabezados = next(lector_csv)  
     for encabezado in encabezados:
-        conjunto_de_datos[encabezado] = []  # Inicializar la lista vacía para cada columna
+        conjunto_de_datos[encabezado] = []  
 
     for fila in lector_csv:
         for i, valor in enumerate(fila):
@@ -18,7 +18,7 @@ with open(archivo_csv, 'r', encoding='latin1') as archivo:
 def imputar_media(columna):
     valores_validos = [valor for valor in columna if valor != '']  
     if len(valores_validos) == 0:
-        # Si no hay valores válidos, no se puede calcular la media
+      
         return columna
     media = sum(float(valor) for valor in valores_validos) / len(valores_validos)
     return [media if valor == '' else valor for valor in columna]
@@ -27,7 +27,7 @@ def imputar_media(columna):
 def imputar_moda(columna):
     valores_validos = [valor for valor in columna if valor != '']  
     if len(valores_validos) == 0:
-        # Si no hay valores válidos, no se puede calcular la moda
+       
         return columna
     moda = max(set(valores_validos), key=valores_validos.count)
     return [moda if valor == '' else valor for valor in columna]
@@ -35,7 +35,7 @@ def imputar_moda(columna):
 # Realizar la imputación de valores faltantes en cada columna según su tipo
 for columna, valores in conjunto_de_datos.items():
     if all(valor == '' for valor in valores):
-        # Si todos los valores son vacíos, no se puede imputar
+       
         continue
     if isinstance(valores[0], (int, float)):
         # Imputar columnas numéricas con la media
