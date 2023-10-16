@@ -1,9 +1,9 @@
-# Leer tus datos desde un archivo CSV
+
 with open(r'C:\Users\Jhoselyne\Documents\documentos\IndianHouses.csv', 'r', encoding='latin1') as file:
     lines = file.readlines()
 
 
-# Crear listas vacías para almacenar los datos de las columnas
+
 area_values = []
 bhk_values = []
 bathroom_values = []
@@ -16,8 +16,8 @@ transaction_values = []
 type_values = []
 per_sqft_values = []
 
-# Recorrer las líneas del archivo para extraer los valores de las columnas
-for line in lines[1:]:  # Excluir la primera línea que contiene los nombres de las columnas
+
+for line in lines[1:]: 
     values = line.strip().split(',')
     area_values.append(float(values[0]))
     
@@ -95,7 +95,7 @@ def calcular_percentiles(valores, percentiles):
         resultados[f'Percentil_{p}'] = valores_ordenados[posicion]
     return resultados
 
-# Calcular medidas estadísticas
+
 media_area = calcular_media(area_values)
 media_precio = calcular_media(price_values)
 media_per_sqft = calcular_media(per_sqft_values)
@@ -120,7 +120,7 @@ percentiles_bhk = calcular_percentiles(bhk_values, percentiles)
 percentiles_bathroom = calcular_percentiles(bathroom_values, percentiles)
 percentiles_parking = calcular_percentiles(parking_values, percentiles)
 
-# Imprimir resultados
+
 print("MEDIA")
 print("Media de Área:", media_area)
 print("Media de Precio:", media_precio)
