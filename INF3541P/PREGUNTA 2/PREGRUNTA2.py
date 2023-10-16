@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-# Leer tus datos desde un archivo CSV
+
 df = pd.read_csv(r'C:\Users\Jhoselyne\Documents\documentos\IndianHouses.csv', encoding='latin1')
 
 # Calcular la media (promedio) para las columnas "Area", "Price" y "Per_Sqft"
@@ -15,30 +15,30 @@ moda_status = df['Status'].mode()[0]
 moda_transaction = df['Transaction'].mode()[0]
 moda_type = df['Type'].mode()[0]
 
-# Calcular la moda y los cuartiles para las columnas numéricas que pueden contener valores faltantes
+# Calcular la moda y los cuartiles 
 moda_bathroom = df['Bathroom'].mode()[0]
 cuartiles_bhk = np.percentile(df['BHK'].dropna(), [25, 50, 75])
 cuartiles_bathroom = np.percentile(df['Bathroom'].dropna(), [25, 50, 75])
 cuartiles_parking = np.percentile(df['Parking'].dropna(), [25, 50, 75])
-cuartiles_area = np.percentile(df['Area'].dropna(), [25, 50, 75])  # Cuartiles para "Area"
-cuartiles_precio = np.percentile(df['Price'].dropna(), [25, 50, 75])  # Cuartiles para "Price"
+cuartiles_area = np.percentile(df['Area'].dropna(), [25, 50, 75])  
+cuartiles_precio = np.percentile(df['Price'].dropna(), [25, 50, 75]) 
 cuartiles_per_sqft = np.percentile(df['Per_Sqft'].dropna(), [25, 50, 75])
 
-# Calcular percentiles específicos para las columnas numéricas que pueden contener valores faltantes
+# Calcular percentiles 
 percentil_10_bhk = np.percentile(df['BHK'].dropna(), 10)
 percentil_90_bhk = np.percentile(df['BHK'].dropna(), 90)
 percentil_10_bathroom = np.percentile(df['Bathroom'].dropna(), 10)
 percentil_90_bathroom = np.percentile(df['Bathroom'].dropna(), 90)
 percentil_10_parking = np.percentile(df['Parking'].dropna(), 10)
 percentil_90_parking = np.percentile(df['Parking'].dropna(), 90)
-percentil_10_area = np.percentile(df['Area'].dropna(), 10)  # Percentiles para "Area"
+percentil_10_area = np.percentile(df['Area'].dropna(), 10) 
 percentil_90_area = np.percentile(df['Area'].dropna(), 90)
-percentil_10_precio = np.percentile(df['Price'].dropna(), 10)  # Percentiles para "Price"
+percentil_10_precio = np.percentile(df['Price'].dropna(), 10)  
 percentil_90_precio = np.percentile(df['Price'].dropna(), 90)
 percentil_10_per_sqft = np.percentile(df['Per_Sqft'].dropna(), 10)
 percentil_90_per_sqft = np.percentile(df['Per_Sqft'].dropna(), 90)
 
-# Imprimir resultados
+
 print("MEDIA")
 print("Media de Área:", media_area)
 print("Media de Precio:", media_precio)
@@ -55,8 +55,8 @@ print("CUARTILES")
 print("Cuartiles de BHK:", cuartiles_bhk)
 print("Cuartiles de Bathroom:", cuartiles_bathroom)
 print("Cuartiles de Parking:", cuartiles_parking)
-print("Cuartiles de Área:", cuartiles_area)  # Cuartiles para "Area"
-print("Cuartiles de Precio:", cuartiles_precio)  # Cuartiles para "Price"
+print("Cuartiles de Área:", cuartiles_area)
+print("Cuartiles de Precio:", cuartiles_precio)  
 print("Cuartiles de Per_Sqft:", cuartiles_per_sqft)
 
 print("PERCENTILES")
